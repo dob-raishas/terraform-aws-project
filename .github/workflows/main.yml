@@ -1,6 +1,6 @@
-- name: "Configure AWS Credentials" Action for GitHub Actions
-
-
-              
-  uses: aws-actions/configure-aws-credentials@v4
-            
+- name: Configure AWS Credentials
+      uses: aws-actions/configure-aws-credentials@v4
+      with:
+        aws-region: eu-west-1
+        role-to-assume: arn:aws:iam::875562562972:role/deployment-role
+        role-session-name: dob-raishas
